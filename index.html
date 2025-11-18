@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>दलाल Terminal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-bg': '#0A0E13',
+              'brand-surface': '#161B22',
+              'brand-border': '#30363D',
+              'brand-primary': '#58A6FF',
+              'brand-secondary': '#1F6FEB',
+              'brand-text-primary': '#E6EDF3',
+              'brand-text-secondary': '#8B949E',
+              'brand-green': '#238636',
+              'brand-green-surface': 'rgba(35, 134, 54, 0.15)',
+              'brand-red': '#DA3633',
+              'brand-red-surface': 'rgba(218, 54, 51, 0.15)',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              logo: ['Poppins', 'sans-serif'],
+            },
+            keyframes: {
+              'fade-in': {
+                '0%': { opacity: '0', transform: 'translateY(-10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+            },
+            animation: {
+              'fade-in': 'fade-in 0.3s ease-out forwards',
+            },
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1",
+    "marked": "https://aistudiocdn.com/marked@^17.0.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-bg text-brand-text-primary">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

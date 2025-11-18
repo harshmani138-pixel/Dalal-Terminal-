@@ -1,0 +1,5 @@
+{
+  "name": "दलाल Terminal",
+  "description": "An AI-powered dashboard that provides in-depth market analysis for various asset classes across different countries. It leverages AI to generate market overviews, analyze financial news, and provide investment outlooks.",
+  "requestFramePermissions": []
+}
